@@ -1,0 +1,12 @@
+.container{
+    height: calc(100% - 400px);
+}
+
+#tabla_1{
+    display: block;
+}
+
+#tabla_2, #tabla_3, #tabla_4, #tabla_5{
+    display: none;
+}
+

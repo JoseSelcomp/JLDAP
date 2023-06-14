@@ -1,0 +1,267 @@
+.container{
+    left: 70px;
+    width: calc(100% - 70px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s ease;
+    /* background-color: #d1164c; */
+    padding: 50px 0px 0px 0px;
+    column-gap: 30px;
+}
+  
+.menu-hamburguesa.mostrar-menu ~ .container{
+    left: 350px;
+    width: calc(100% - 350px);
+}
+
+.contenedor-btnGestion{
+    background-color: #202020;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #202020;
+    transition: background-color .3s ease;
+}
+.contenedor-btnGestion a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.contenedor-btnGestion:hover{
+    cursor: pointer;
+    background-color: #d1164c;
+}
+
+#gestion-aprovisionamiento{
+    position: relative;
+    width: 35px;
+    height: 40px;
+    transition: .3s ease;
+}
+.contenedor-btnGestion:hover #gestion-aprovisionamiento{
+    width: 45px;
+    height: 50px;
+}
+
+#gestion-financiera{
+    position: relative;
+    width: 55px;
+    height: 36px;
+    transition: .3s ease;
+}
+.contenedor-btnGestion:hover #gestion-financiera{
+    width: 65px;
+    height: 46px;
+}
+
+#gestion-humana{
+    position: relative;
+    width: 41px;
+    height: 41px;
+    transition: .3s ease;
+}
+.contenedor-btnGestion:hover #gestion-humana{
+    width: 51px;
+    height: 51px;
+}
+
+#gestion-estrategica{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    transition: .3s ease;
+}
+.contenedor-btnGestion:hover #gestion-estrategica{
+    width: 55px;
+    height: 55px;
+}
+
+#gestion-calidad{
+    position: relative;
+    width: 43px;
+    height: 35px;
+    transition: .3s ease;
+}
+.contenedor-btnGestion:hover #gestion-calidad{
+    width: 51px;
+    height: 45px;
+}
+
+#gestion-operaciones{
+    position: relative;
+    width: 43px;
+    height: 43px;
+    transition: .3s ease;
+}
+.contenedor-btnGestion:hover #gestion-operaciones{
+    width: 53px;
+    height: 53px;
+}
+
+#gestion-comercial{
+    position: relative;
+    width: 50px;
+    height: 35px;
+    transition: .3s ease;
+}
+.contenedor-btnGestion:hover #gestion-comercial{
+    width: 60px;
+    height: 45px;
+}
+
+
+.tabla{
+    width: 75%;
+    max-height: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    z-index: 3;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.encabezado-tabla{
+    background: #202020;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px #202020;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+}
+
+
+.titulo-numero, .titulo-nombre,
+.titulo-documento{
+    color: #f5f5f5;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    text-align: center;
+}
+.titulo-nombre{
+    width: 65%;
+}
+.titulo-documento{
+    width: 25%;
+    border-top-right-radius: 20px;
+}
+.titulo-numero{
+    width: 10%;
+    border-top-left-radius: 20px;
+}
+.titulo-nombre h2{
+    font-weight: 550;
+}
+.titulo-documento h2{
+    font-weight: 550;
+}
+.titulo-numero h2{
+    font-weight: 550;
+}
+
+.cuerpo-tabla{
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px #202020;
+}
+
+.fila-datos{
+    width: 100%;
+    height: 50px;
+    color: #202020;
+    background-color: #e4e4e4;
+    z-index: 998;
+    display: flex;
+    /* transition: background-color .3s ease; */
+}
+.fila-datos:hover{
+    cursor: default;
+    /* background-color: #f5f5f5;
+    color: #363636; */
+}
+.dato-numero, .dato-titulo, .dato-documento{
+    padding: 10px 15px;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.dato-numero{
+    text-align: center;
+    width: 10%;
+}
+.numero-hijo{
+    font-size: 1.1rem;
+    text-align: right;
+   
+}
+.dato-titulo{
+    width: 65%;
+}
+.titulo-hijo{
+    padding: 10px 55px;
+    font-size: 1.1rem;
+}
+
+.dato-documento{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dato-documento a{
+    text-decoration: none;
+    /* width: 35px;
+    height: 35px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.dato-documento img{
+    width: 35px;
+    height: 35px;
+    transition: .3s ease;
+}
+
+.dato-documento img:hover{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.dato-documento #pdf:hover{
+    filter: drop-shadow(0px 0px 10px #ff0000);
+}
+
+.dato-documento #excel:hover{
+    filter: drop-shadow(0px 0px 10px #0bbe7a);
+}
+
+.dato-documento #word:hover{
+    filter: drop-shadow(0px 0px 10px #003cff);
+}
+
+.dato-documento #point:hover{
+    filter: drop-shadow(0px 0px 10px #d44e10);
+}
+
+.dato-documento #img:hover{
+    filter: drop-shadow(0px 0px 10px #0687ff);
+}
+
+/* #net{
+    background-color: #d1164c;
+} */

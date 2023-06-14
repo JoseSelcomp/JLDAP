@@ -1,0 +1,220 @@
+/* Contenedor principal de la página */
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    color: #f5f5f5;
+    background-image: url(backgroundLogin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor donde se ubica todo el diseño del login, que incluye los contenedores
+del formulario y el de las imagénes */
+.login-container{
+    width: 40%;
+    height: 50%;
+    background: #f5f5f5;
+    color: #202020;
+    top: 100px;
+    padding: 20px !important;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    column-gap: 10px;
+    box-shadow: 0px 0px 30px 0px #202020;
+}
+
+/* Contenedor del formulario */
+.form-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #fa0060;
+}
+
+/* Contenedor de las imagénes que se encuentran al lado del formulario */
+.presentacion-container{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor de la imagen del logo de selcomp */
+#caja-logo{
+    text-align: center;
+    position: relative;
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagen del logo de selcomp */
+#logo{
+    width: 90%;
+    height:85%;
+    position: relative;
+}
+
+/* Contenedor donde se encuentra la imagen del diseño del login */
+#caja-imagen{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    position: relative;
+    justify-content: center;
+}
+
+/* Imagen de presentación del login */
+#img-presentacion{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Formulario */
+#formulario{
+    width: 80%;
+    height: 80%;
+    top: 40px;
+    bottom: 30px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    position: relative;
+    align-items: center;
+    border: 2px  #d14;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Contenedor donde solo se ubican los campos donde se ingresan las credenciales y 
+el contenedor para el icono de usuario, este contenedor se encuentra dentro del formulario */
+.datos-formulario{
+    width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+    row-gap: 8px;
+    position: relative;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Contenedor del icono usuario*/
+.campo-imagen-user{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Imagen del icono de usuario */
+#img-icono-user{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+/* Contenedor de los campos de las credenciales, cada campo y el botón estan dentro de un contenedor distinto pero con el mismo estilo */
+.campo-container{
+    width: 100%;
+    height: 35px;
+    padding: 5px 5px;
+    margin: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+
+/* Estilos que comparten los cambos y el botón de inicio de sesión */
+.campo, .boton{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Características únicas para los campos */
+.campo{
+    outline-color: transparent;
+    border-width: 0;
+    outline-width: 0;
+    padding-left: 20px;
+    margin-top: -15px;
+    color: #202020;
+    font-size: 1em;
+    background: #ffadcc;
+}
+
+/* Acciones para los campos según la interacción del usuario */
+.campo:focus{
+    outline-color: transparent;
+    border-width: 0;
+    outline-width: 0;
+    color: #202020;
+    /* box-shadow: 0px 0px 10px 0px #d14; */
+}
+
+/* Aquí se define los estilos para cuando hay autocompletado en el formulario */
+.campo:-webkit-autofill {
+    box-shadow: inset 0 0 0px 1000px #ffadcc; /* Cambia el color de fondo */
+    color: #202020; /* Cambia el color del texto */
+}
+
+/* Características únicas del botón */
+.boton{
+    width: 80%;
+    border: none;
+    text-align: center;
+    align-items: center;
+    background: #202020;
+    color: #f5f5f5;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background .5s ease;
+    transition: color .5s ease;
+}
+
+/* Acciones para el botón según la interacción con el usuario */
+.boton:hover{
+    cursor: pointer;
+    /* color: #dd093e; */
+    background: #363636;
+}
+

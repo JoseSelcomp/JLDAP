@@ -1,0 +1,129 @@
+#aviso{
+    display: none;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #2C7E7E;
+    border-radius: 4px;
+}
+  
+#aviso h3 {
+    margin-top: 0;
+}
+  
+#aviso p {
+    margin-bottom: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor-mapa{
+    left: 70px;
+    width: calc(100% - 70px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 70px;
+}
+
+/* #titulo-proceso{
+    filter: drop-shadow(0px 0px 5px #363636);
+} */
+#background-proceso{
+    fill: #202020;
+    stroke: #202020;
+    filter: drop-shadow(0px 0px 5px #363636);
+}
+
+#forma-boton{
+    fill: #d1164c;
+    stroke: #d1164c;
+    filter: drop-shadow(0px 0px 5px #c04c6d);
+    transition: fill .3s ease;
+    transition: stroke .3s ease;
+    transition: filter .4s ease;
+}
+#fondo-icono{
+    fill: #f5f5f5;
+    stroke: #f5f5f5;
+    transition: fill .5s ease;
+    transition: stroke .5s ease;
+    transition: filter .6s ease;
+}
+#titulo{
+    fill: #363636;
+}
+#icono{
+    fill: #d1164c;
+    transition: filter .8s ease;
+}
+
+#btnGestion:hover > path{
+    cursor: pointer;
+}
+
+#btnGestion:hover > #forma-boton{
+    fill: #f5f5f5;
+    stroke: #f5f5f5;
+    filter: drop-shadow(0px 0px 10px #d6d3d3);
+}
+
+#btnGestion:hover > #fondo-icono{
+    fill: #363636;
+    stroke: #363636;
+    filter: drop-shadow(0px 0px 5px #363636);
+}
+
+#btnGestion:hover > #titulo{
+    fill: #363636;
+}
+
+#btnGestion:hover > #icono{
+    fill: #d1164c;
+    filter: drop-shadow(0px 0px 7px #d1164c);
+}
+
+.contenedor-mapa{
+    transition: 0.5s ease;
+  }
+  
+.menu-hamburguesa.mostrar-menu ~ .contenedor-mapa{
+    left: 350px;
+    width: calc(100% - 350px);
+}
+
+#relations-lines{
+    animation: animConectores 4s ease infinite;
+}
+
+#relations-lines path{
+    stroke: #202020;
+}
+
+.extra-relationals-lines{
+    animation: animConectores 4s ease infinite;
+}
+
+.extra-relationals-lines path{
+    fill: #202020;
+    stroke: #202020;
+}
+
+@keyframes animConectores{
+    0%{filter: drop-shadow(0px 0px 0px #202020);}
+    50%{filter: drop-shadow(0px 0px 9px #202020);}
+    100%{filter: drop-shadow(0px 0px 0px #202020);}
+}
+
+#requeriminientos_cliente, #satisfaccion_cliente{
+    filter: drop-shadow(0px 0px 5px #202020);
+}

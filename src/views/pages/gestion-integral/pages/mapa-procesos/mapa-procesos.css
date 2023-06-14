@@ -1,0 +1,160 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	background: url(Imagenes/fondi.PNG);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 5px -20px 0px -200px;
+	
+}
+#logo{
+    width: 10%;
+    margin: 4px 20px 0px -1460px;
+    cursor: pointer;
+}
+.container{
+	width: 100%;
+	height: 80vh;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	text-align: center;
+    margin-top: -55px;
+  
+   
+}
+.titulo{
+	font-weight: bold;
+	color: #eb0045 ;
+margin-top: -20px;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin: -5px 0px 0px 190px;
+}
+
+#recuadro-calidad{
+    cursor: pointer;
+}
+#recuadro-calidad:hover{
+    fill: #d1164c  ;
+	stroke: white ;
+}
+#recuadro-humana{
+    cursor: pointer;
+}
+#recuadro-humana:hover{
+    fill: #d1164c  ;
+	stroke: white ;
+}
+#recuadro-aprovisionamiento{
+    cursor: pointer;
+}
+#recuadro-aprovisionamiento:hover{
+    fill: #d1164c  ;
+	stroke: white ;
+}
+#recuadro-financiera{
+    cursor: pointer;
+}
+#recuadro-financiera:hover{
+    fill: #d1164c  ;
+	stroke: white ;
+}
+#recuadro-comercial{
+    cursor: pointer;
+}
+#recuadro-comercial:hover{
+    fill: #d1164c  ;
+	stroke: white ;
+}
+#recuadro-operaciones{
+    cursor: pointer;
+}
+#recuadro-operaciones:hover{
+    fill: #d1164c  ;
+	stroke: white ;
+}
+#recuadro-estrategico{
+    cursor: pointer;
+}
+#recuadro-estrategico:hover{
+    fill: #d1164c  ;
+	stroke: white ;
+}
+
+/*************************regresar**************
+button {
+    margin: 0px 10px 0px 1650px;
+    position: relative;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background: #d1164c;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button span {
+    position: absolute;
+    background: #fff;
+    transition: .5s;
+}
+
+button span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1) {
+    left: 0;
+}
+
+button:hover span:nth-child(2) {
+    right: 0;
+}
+
+button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
+} ********/
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <link rel="stylesheet" type="text/css" href="/login.css">
+    <link rel="stylesheet" type="text/css" href="/loginResponsive.css">
+    <link rel="icon" type="image/ico" href="/satelite.png">
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-container">
+            <div class="presentacion-container">
+                <div id="caja-logo">
+                    <img src="/SelcompLogoPrincipal.png" id="logo"/>
+                </div>
+                <div id="caja-imagen">
+                    <img src="imgPresentacion2.png" id="img-presentacion"/>
+                </div>
+            </div>
+            <div class="form-container">
+                <form  method="post" id="formulario">
+                    <div class="datos-formulario">
+                        <div class="campo-imagen-user">
+                            <img src="iconoLoginFormulario.png" id="img-icono-user"/>
+                        </div>
+                        <!-- <label class="titulo-campo">Departamento</label> -->
+                        <div class="campo-container">
+                            <input type="text" name="group" class="campo" placeholder="Departamento"/>
+                        </div>
+                        <!-- <label class="titulo-campo">Usuario</label> -->
+                        <div class="campo-container">
+                            <input type="text" name="username" class="campo" placeholder="Usuario"/>
+                        </div>
+                        <!-- <label class="titulo-campo">Contraseña</label> -->
+                        <div class="campo-container">
+                            <input type="password" name="password" class="campo" placeholder="Contraseña"/>
+                        </div>
+                        <% if (error) { %>
+                            <p><%= error %></p>
+                        <% } %>
+                    </div>
+                    <div class="campo-container">
+                        <input type="submit" value="Iniciar sesión" class="boton"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

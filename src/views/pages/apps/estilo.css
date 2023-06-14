@@ -1,0 +1,243 @@
+*{
+
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+body {
+    
+    background: url(fondi.PNG)
+}
+#logo{
+    width: 13%;
+    margin: -25px 0px 0px -1650px;
+}
+#titulo h2{
+    color:  #eb0045;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-weight: 400;
+    margin: -20px 0px 0px 10px;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 100px 0px 0px 0px;
+}
+.card {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    margin: 70px;
+    margin-top: -1px;
+}
+
+.card .content {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+    text-align: center;  
+    padding: 20px;
+    background: #fff;
+}
+
+.card .content .img {
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.card .content .img img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card .content span {
+    position: absolute;
+    width: 600px;
+    height: 260px;
+    background: linear-gradient(to right, #e60505, #d1164c);
+    transform: rotate(-35deg);
+    top: -75px;
+    left: -150px;
+}
+
+.card .content h4 {
+    font-size: 20px;
+    color: #0d0e0d;
+    margin-bottom: 5px;
+}
+
+.card .content h6 {
+    font-size: 13px;
+    color: #5e2066;
+}
+
+.card .content p {
+    font-size: 15px;
+    color: #0a0a0abe;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.card .links {
+    position: absolute;
+    z-index: 90;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 3px 5px rgba(238, 0, 12, 0.4);
+    padding: 30px;
+    align-items: center;
+    right: 100px;
+    top: 45px;
+    transition: .5s;
+}
+
+.card:hover .links {
+    right: -115px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.card .links a {
+    font-size: 20px;
+    color: #646069;
+    text-decoration: none;
+}
+
+.card .links a:nth-child(1):hover {
+    color: #d1164c;
+}
+
+.card .links a:nth-child(2):hover {
+    color: #1C93E4;
+}
+
+.card .links a:nth-child(3):hover {
+    color: #5D277D;
+}
+
+.card .links a:nth-child(4):hover {
+    color: #FE0000;
+}
+
+/*************************regresar**********************/
+button {
+    margin: -10px 10px 0px 1750px;
+    position: relative;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background: #d1164c;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button span {
+    position: absolute;
+    background: #fff;
+    transition: .5s;
+}
+
+button span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1) {
+    left: 0;
+}
+
+button:hover span:nth-child(2) {
+    right: 0;
+}
+
+button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
+}
+button:hover span:nth-child(1) {
+    left: 0;
+}
+
+button:hover span:nth-child(2) {
+    right: 0;
+}
+
+button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

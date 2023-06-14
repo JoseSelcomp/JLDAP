@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body{
+    background: url(fondi.PNG);
+    background-size: cover;
+    justify-content: center;
+}
+.text-justify {
+    text-align: justify;
+}
+/*---------------------------------------------Fila del encabezado, incluye el logo y el titulo---------------------------------------------*/
+#encabezado{
+    row-gap: 5px;
+}
+
+ #logo {
+    width: 30%;
+    justify-content: left !important;
+    border-radius: 0px;
+}
+#titulo{
+    background-color: #0e0d0d36;
+    color: #eef0ee;
+    border: 0px;
+    font-size: 45px;
+    font-weight: bold;
+    width: calc(border-box - 10%);
+    justify-content: center;
+    text-align: center;
+}
+/*----------------------------------------Estilos de la fila de portales donde se encuentran los dos tags---------------------------------*/
+#portales{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    column-gap: calc(4em + 1vw);
+    row-gap: calc(1.5em + 1vw);
+    border-radius: 60%;
+   
+}
+/*----------------------Estilos de las columnas de los portales cliente y especialistas--------------------*/
+#pCliente, #pEspecialistas{
+    border: solid 8px #0808082a;
+    background-color: #fff;
+    width: 440px;
+}
+/*------------------Estilos de las filas del contenido del portal---------------------*/
+#contenidoPortal{
+    justify-content: center;
+    text-align: center;
+    row-gap: 5px;
+}
+
+/*---------------Estilos del titulo de la categoría-----------------------*/
+#categoria{
+    justify-content: center !important;
+    background-color: #14141463;
+    color: #f5f5f5;
+    width: 94% !important;
+    font-size: calc(1em + 0.5vw) !important;
+    font-weight: bold;
+}
+/*---------------Estilos del parrafo de los portales----------------------*/
+#descripcion{
+    font-size: calc(0.4em +0.5vw) !important;
+    width: 98%;
+    text-align: center;
+}
+/*---------------Estilos de los enlaces de los portales------------------*/
+.enlace{
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #e60505 !important;
+    border-radius: 7px !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    color: #f5f5f5 !important;
+    font: 10px;
+    text-align: center !important;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+    width: 33% !important;
+}
+img{
+    border-radius: 70px;
+    margin: -2px 0px 10px 0px;
+    
+}
+/*-----------Estilo para cambiar de color el boton del enlace-----------*/
+.enlace:hover{
+    background-color: #f4f4f8ea !important;
+    color: black !important;
+    
+}
+
+
+
+/*------------ -----------------------Sobre escrituras para realizar cambios responsivos en la página según un tamaño específico---------------------------------*/ 
+@media screen and (max-width: 380){
+    #portales{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    #pCliente, #pEspecialistas{
+        display: grid !important;
+        flex-direction: row !important;
+        min-width: 160px !important;
+    }
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Calidad y Servicio al Cliente</title>
+    <link rel="icon" href="../../public/img/satelite.ico" />
+    <link rel="stylesheet" href="../../public/css/contenidoGestiones.css">
+    <link rel="stylesheet" href="../../public/css/menu.css">
+    <script src="https://kit.fontawesome.com/41dba275ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <aside class="menu-hamburguesa">
+    <div class="contenedor-botones-menu">
+      <div class="boton-hamburguesa" onclick="menuDesplegable()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="cerrar-menu" onclick="menuEstatico()">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <div class="contenedor-menu" id="menu-desplegable">
+      <ul>
+        <li>
+          <a href="../procesos" target="_parent" class="opcion-menu">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-chess-king"></i>
+            <p>Gestión Estratégica</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../procesos/estrategica/caracterizacion">Caracterización</a></li>
+            <li><a href="../procesos/estrategica/procedimientos">Procedimientos</a></li>
+            <li><a href="../procesos/estrategica/manuales">Manuales</a></li>
+            <li><a href="../procesos/estrategica/formatos">Formatos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-handshake-simple"></i>
+            <p>Gestión de Calidad y Servicio al Cliente</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../procesos/calidad/caracterizacion">Caracterización</a></li>
+            <li><a href="../procesos/calidad/calidad">Calidad</a></li>
+            <li><a href="../procesos/calidad/acciones-de-mejora">Acciones de mejora</a></li>
+            <li><a href="../procesos/calidad/auditorias">Auditorías</a></li>
+            <li><a href="../procesos/calidad/informacion-documentada">Información documentada</a></li>
+            <li><a href="../procesos/calidad/servicio-al-cliente">Servicio al Cliente y<br>Salidas no Conformes</a></li>
+            <li><a href="../procesos/calidad/generales">Generales</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-gear"></i>
+            <p>Gestión de Operaciones</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../procesos/operaciones/operaciones">Operaciones</a></li>
+            <li><a href="../procesos/operaciones/mantenimiento">Mantenimiento Preventivo</a></li>
+            <li><a href="../procesos/operaciones/laboratorio">Laboratorio</a></li>
+            <li><a href="../procesos/operaciones/planes-de-trabajo">Planes de Trabajo</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-chart-column"></i>
+            <p>Gestión Comercial</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../procesos/comercial/caracterzacion">Caracterización</a></li>
+            <li><a href="../procesos/comercial/procedimientos">Procedimientos</a></li>
+            <li><a href="../procesos/comercial/politicas">Políticas</a></li>
+            <li><a href="../procesos/comercial/formatos">Formatos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fas fa-users"></i>
+            <p>Gestión Humana</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../procesos/humana/caracterizacion">Caracterización</a></li>
+            <li><a href="../procesos/humana/politicas">Políticas</a></li>
+            <li><a href="../procesos/humana/manuales">Manuales</a></li>
+            <li><a href="../procesos/humana/procedimientos">Procedimientos</a></li>
+            <li><a href="../procesos/humana/instructivos">Instructivos</a></li>
+            <li><a href="../procesos/humana/organigramas">Organigramas</a></li>
+            <li><a href="../procesos/humana/formatos">Formatos</a></li>
+            <li><a href="../procesos/humana/guias">Guías</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-print"></i>
+            <p>Gestión de Aprovisionamiento</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../procesos/aprovisionamiento/caracterizacion">Caracterización</a></li>
+            <li><a href="../procesos/aprovisionamiento/compras">Compras</a></li>
+            <li><a href="../procesos/aprovisionamiento/almacen">Almacén</a></li>
+            <li><a href="../procesos/aprovisionamiento/producto-no-conforme">Producto No Conforme</a></li>
+          </ul>
+        </li>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Gestión Financiera</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../procesos/financiera/caracterizacion">Caracterización</a></li>
+            <li><a href="../procesos/financiera/procedimientos">Procedimientos</a></li>
+            <li><a href="../procesos/financiera/instructivos">Instructivos</a></li>
+            <li><a href="../procesos/financiera/formatos">Formatos</a></li>
+            <li><a href="../procesos/financiera/no-controlados">No controlados SGC</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="contenedor-menu" id="menu-estatico">
+      <ul>
+        <li>
+          <a href="../procesos" target="_parent" class="opcion-menu">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <a href="../procesos/estrategica" class="opcion-menu">
+            <i class="fa-solid fa-chess-king"></i>
+            <p>Gestión Estratégica</p>
+          </a>
+        </li>
+        <li>
+          <a href="../procesos/calidad" class="opcion-menu">
+            <i class="fa-solid fa-handshake-simple"></i>
+            <p>Gestión de Calidad y Servicio al Cliente</p>
+          </a>
+        </li>
+        <li>
+          <a href="../procesos/operaciones" class="opcion-menu">
+            <i class="fa-solid fa-gear"></i>
+            <p>Gestión de Operaciones</p>
+          </a>
+        </li>
+        <li>
+          <a href="../procesos/comercial" class="opcion-menu">
+            <i class="fa-solid fa-chart-column"></i>
+            <p>Gestión Comercial</p>
+          </a>
+        </li>
+        <li>
+          <a href="../procesos/humana" class="opcion-menu">
+            <i class="fas fa-users"></i>
+            <p>Gestión Humana</p>
+          </a>
+        </li>
+        <li>
+          <a href="../procesos/aprovisionamiento" class="opcion-menu">
+            <i class="fa-solid fa-print"></i>
+            <p>Gestión de Aprovisionamiento</p>
+          </a>
+        </li>
+        <li>
+          <a href="../procesos/financiera" class="opcion-menu">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Gestión Financiera</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Gestión de Calidad y Servicio al Cliente</h1>
+        </div>
+        <section class="contenedor-categoria">
+    <!--=============================================================================================================================-->        
+            <a href="calidad/caracterizacion" class="opcion">
+                <div class="tarjeta">
+                    <div class="icono-tarjeta">
+                        <div class="fondo-icono">
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="titulo-tarjeta">
+                        <h3>Caracterización</h3>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="descripcion-tarjeta">
+                        <p>Click aquí para ver<br>todos los documentos</p>
+                    </div>
+                </div>
+            </a>
+    <!--=============================================================================================================================--> 
+            <a href="calidad/calidad" class="opcion">
+                <div class="tarjeta">
+                    <div class="icono-tarjeta">
+                        <div class="fondo-icono">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="titulo-tarjeta">
+                        <h3>Calidad</h3>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="descripcion-tarjeta">
+                        <p>Click aquí para ver<br>todos los documentos</p>
+                    </div>
+                </div>
+            </a>
+    <!--=============================================================================================================================--> 
+            <a href="calidad/acciones-de-mejora" class="opcion">
+                <div class="tarjeta">
+                    <div class="icono-tarjeta">
+                        <div class="fondo-icono">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="titulo-tarjeta">
+                        <h3>Acciones de mejora</h3>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="descripcion-tarjeta">
+                        <p>Click aquí para ver<br>todos los documentos</p>
+                    </div>
+                </div>
+            </a>
+    <!--=============================================================================================================================--> 
+            <a href="calidad/auditorias" class="opcion">
+                <div class="tarjeta">
+                    <div class="icono-tarjeta">
+                        <div class="fondo-icono">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="titulo-tarjeta">
+                        <h3>Auditorías</h3>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="descripcion-tarjeta">
+                        <p>Click aquí para ver<br>todos los documentos</p>
+                    </div>
+                </div>
+            </a>
+    <!--=============================================================================================================================--> 
+            <a href="calidad/informacion-documentada" class="opcion">
+                <div class="tarjeta">
+                    <div class="icono-tarjeta">
+                        <div class="fondo-icono">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="titulo-tarjeta">
+                        <h3>Información documentada</h3>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="descripcion-tarjeta">
+                        <p>Click aquí para ver<br>todos los documentos</p>
+                    </div>
+                </div>
+            </a>
+    <!--=============================================================================================================================--> 
+            <a href="calidad/servicio-al-cliente" class="opcion">
+                <div class="tarjeta">
+                    <div class="icono-tarjeta">
+                        <div class="fondo-icono">
+                            <i class="fa-solid fa-head-side-cough"></i>
+                        </div>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="titulo-tarjeta">
+                        <h3>Servicio al Cliente y Salidas no Conformes</h3>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="descripcion-tarjeta">
+                        <p>Click aquí para ver<br>todos los documentos</p>
+                    </div>
+                </div>
+            </a>
+    <!--=============================================================================================================================--> 
+            <a href="calidad/generales" class="opcion">
+                <div class="tarjeta">
+                    <div class="icono-tarjeta">
+                        <div class="fondo-icono">
+                            <i class="fa-solid fa-folder"></i>
+                        </div>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="titulo-tarjeta">
+                        <h3>Generales</h3>
+                    </div>
+                    <div class="barra"></div>
+                    <div class="descripcion-tarjeta">
+                        <p>Click aquí para ver<br>todos los documentos</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </div>
+    <script src="../../javascript/tamanoOG.js"></script>
+    <script src="../../javascript/menu.js"></script>
+</body>
+</html>

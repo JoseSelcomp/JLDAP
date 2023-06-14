@@ -1,0 +1,295 @@
+/* @media screen and (min-width: 9999px){
+    .login-container{
+        width: 60%;
+        height: 5000px;
+        top: 300px;
+    }
+
+    .datos-formulario{
+        height: 4000px;
+    }
+
+    .campo-imagen-user{
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .campo-container{
+        width: 100%;
+        height: 100px;
+    }
+} */
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    .login-container{
+        width: 50%;
+        height: 55%;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .login-container{
+        width: 65%;
+        height: 75%;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .login-container{
+        width: 75%;
+        height: 92%;
+        top: 20px;
+        flex-direction: column;
+    }
+    .form-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .presentacion-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .datos-formulario{
+        width: 100%;
+    }
+
+    .campo-container{
+        height: 55px;
+    }
+
+    .campo-imagen-user{
+        width: 130px;
+        height: 130px;
+    }
+    .campo{
+        font-size: 1.5rem;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .boton{
+        width: 60%;
+        height: 55px;
+        font-size: 1.5rem;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 911px){
+    .login-container{
+        width: 70%;
+        height: 80%;
+        top: 100px;
+        flex-direction: column;
+    }
+    .form-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .presentacion-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .datos-formulario{
+        width: 100%;
+    }
+
+    .campo-container{
+        height: 40px;
+    }
+
+    .campo-imagen-user{
+        width: 100px;
+        height: 100px;
+    }
+    .campo{
+        font-size: 1.1rem;
+    }
+    .boton{
+        width: 60%;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .login-container{
+        width: 70%;
+        height: 85%;
+        top: 70px;
+        flex-direction: column;
+    }
+
+    .form-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .presentacion-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .datos-formulario{
+        width: 100%;
+    }
+
+    .campo-container{
+        height: 35px;
+    }
+
+    .campo-imagen-user{
+        width: 100px;
+        height: 100px;
+    }
+
+    .campo{
+        font-size: 1.1rem;
+    }
+    .boton{
+        width: 55%;
+        height: 35px;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .login-container{
+        width: 70%;
+        height: 90%;
+        top: 10px;
+        flex-direction: column;
+    }
+
+    .form-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .presentacion-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .datos-formulario{
+        width: 100%;
+        top: -15px;
+    }
+
+    .campo-container{
+        height: 30px;
+    }
+
+    .campo-imagen-user{
+        width: 70px;
+        height: 70px;
+    }
+
+    .campo{
+        font-size: .7rem;
+    }
+    .boton{
+        width: 50%;
+        height: 30px;
+        font-size: .7em;
+        top: -40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .login-container{
+        width: 80%;
+        height: 80%;
+        top: 70px;
+        flex-direction: column;
+    }
+
+    .form-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .presentacion-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .datos-formulario{
+        width: 100%;
+        top: -15px;
+    }
+
+    .campo-container{
+        height: 30px;
+    }
+
+    .campo-imagen-user{
+        width: 70px;
+        height: 70px;
+    }
+
+    .campo{
+        font-size: .7rem;
+    }
+    .boton{
+        width: 50%;
+        height: 30px;
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 389px){
+    .login-container{
+        width: 80%;
+        height: 90%;
+        top: 10px;
+        flex-direction: column;
+    }
+    #caja-imagen{
+        display: flex;
+        height: 90%;
+        width: 90%;
+    }
+
+    .form-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .presentacion-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .datos-formulario{
+        width: 100%;
+        top: -15px;
+    }
+
+    .campo-container{
+        height: 23px;
+    }
+
+    .campo-imagen-user{
+        width: 70px;
+        height: 70px;
+    }
+
+    .campo{
+        font-size: .7rem;
+    }
+    .boton{
+        width: 50%;
+        height: 23px;
+        font-size: .7em;
+    }
+}

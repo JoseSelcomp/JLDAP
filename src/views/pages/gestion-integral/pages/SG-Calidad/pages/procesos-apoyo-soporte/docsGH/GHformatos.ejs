@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatos</title>
+    <link rel="icon" href="../../../public/img/satelite.ico" />
+    <link rel="stylesheet" href="../../../public/css/main.css">
+    <link rel="stylesheet" href="../../../public/css/tablasEstilos.css">
+    <link rel="stylesheet" href="../../../public/css/menu.css">
+    <link rel="stylesheet" href="../../../public/css/menuTablas4.css">
+    <link rel="stylesheet" href="../../../public/css/estilosTablasAdicionales.css">
+    <script src="https://kit.fontawesome.com/41dba275ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <aside class="menu-hamburguesa">
+    <div class="contenedor-botones-menu">
+      <div class="boton-hamburguesa" onclick="menuDesplegable()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="cerrar-menu" onclick="menuEstatico()">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <div class="contenedor-menu" id="menu-desplegable">
+      <ul>
+        <li>
+          <a href="../../procesos" target="_parent" class="opcion-menu">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-chess-king"></i>
+            <p>Gestión Estratégica</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../../procesos/estrategica/caracterizacion">Caracterización</a></li>
+            <li><a href="../../procesos/estrategica/procedimientos">Procedimientos</a></li>
+            <li><a href="../../procesos/estrategica/manuales">Manuales</a></li>
+            <li><a href="../../procesos/estrategica/formatos">Formatos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-handshake-simple"></i>
+            <p>Gestión de Calidad y Servicio al Cliente</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../../procesos/calidad/caracterizacion">Caracterización</a></li>
+            <li><a href="../../procesos/calidad/calidad">Calidad</a></li>
+            <li><a href="../../procesos/calidad/acciones-de-mejora">Acciones de mejora</a></li>
+            <li><a href="../../procesos/calidad/auditorias">Auditorías</a></li>
+            <li><a href="../../procesos/calidad/informacion-documentada">Información documentada</a></li>
+            <li><a href="../../procesos/calidad/servicio-al-cliente">Servicio al Cliente y<br>Salidas no Conformes</a></li>
+            <li><a href="../../procesos/calidad/generales">Generales</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-gear"></i>
+            <p>Gestión de Operaciones</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../../procesos/operaciones/operaciones">Operaciones</a></li>
+            <li><a href="../../procesos/operaciones/mantenimiento">Mantenimiento Preventivo</a></li>
+            <li><a href="../../procesos/operaciones/laboratorio">Laboratorio</a></li>
+            <li><a href="../../procesos/operaciones/planes-de-trabajo">Planes de Trabajo</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-chart-column"></i>
+            <p>Gestión Comercial</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../../procesos/comercial/caracterzacion">Caracterización</a></li>
+            <li><a href="../../procesos/comercial/procedimientos">Procedimientos</a></li>
+            <li><a href="../../procesos/comercial/politicas">Políticas</a></li>
+            <li><a href="../../procesos/comercial/formatos">Formatos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fas fa-users"></i>
+            <p>Gestión Humana</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../../procesos/humana/caracterizacion">Caracterización</a></li>
+            <li><a href="../../procesos/humana/politicas">Políticas</a></li>
+            <li><a href="../../procesos/humana/manuales">Manuales</a></li>
+            <li><a href="../../procesos/humana/procedimientos">Procedimientos</a></li>
+            <li><a href="../../procesos/humana/instructivos">Instructivos</a></li>
+            <li><a href="../../procesos/humana/organigramas">Organigramas</a></li>
+            <li><a href="../../procesos/humana/formatos">Formatos</a></li>
+            <li><a href="../../procesos/humana/guias">Guías</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-print"></i>
+            <p>Gestión de Aprovisionamiento</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../../procesos/aprovisionamiento/caracterizacion">Caracterización</a></li>
+            <li><a href="../../procesos/aprovisionamiento/compras">Compras</a></li>
+            <li><a href="../../procesos/aprovisionamiento/almacen">Almacén</a></li>
+            <li><a href="../../procesos/aprovisionamiento/producto-no-conforme">Producto No Conforme</a></li>
+          </ul>
+        </li>
+        </li>
+        <li>
+          <a href="#" class="opcion-menu">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Gestión Financiera</p>
+          </a>
+          <ul class="submenu">
+            <li><a href="../../procesos/financiera/caracterizacion">Caracterización</a></li>
+            <li><a href="../../procesos/financiera/procedimientos">Procedimientos</a></li>
+            <li><a href="../../procesos/financiera/instructivos">Instructivos</a></li>
+            <li><a href="../../procesos/financiera/formatos">Formatos</a></li>
+            <li><a href="../../procesos/financiera/no-controlados">No controlados SGC</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="contenedor-menu" id="menu-estatico">
+      <ul>
+        <li>
+          <a href="../../procesos" target="_parent" class="opcion-menu">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <a href="../../procesos/estrategica" class="opcion-menu">
+            <i class="fa-solid fa-chess-king"></i>
+            <p>Gestión Estratégica</p>
+          </a>
+        </li>
+        <li>
+          <a href="../../procesos/calidad" class="opcion-menu">
+            <i class="fa-solid fa-handshake-simple"></i>
+            <p>Gestión de Calidad y Servicio al Cliente</p>
+          </a>
+        </li>
+        <li>
+          <a href="../../procesos/operaciones" class="opcion-menu">
+            <i class="fa-solid fa-gear"></i>
+            <p>Gestión de Operaciones</p>
+          </a>
+        </li>
+        <li>
+          <a href="../../procesos/comercial" class="opcion-menu">
+            <i class="fa-solid fa-chart-column"></i>
+            <p>Gestión Comercial</p>
+          </a>
+        </li>
+        <li>
+          <a href="../../procesos/humana" class="opcion-menu">
+            <i class="fas fa-users"></i>
+            <p>Gestión Humana</p>
+          </a>
+        </li>
+        <li>
+          <a href="../../procesos/aprovisionamiento" class="opcion-menu">
+            <i class="fa-solid fa-print"></i>
+            <p>Gestión de Aprovisionamiento</p>
+          </a>
+        </li>
+        <li>
+          <a href="../../procesos/financiera" class="opcion-menu">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Gestión Financiera</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+      <div class="contenedor-barra">
+        <div class="contenedor-menu-tablas">
+          <ul class="menu">
+            <li class="active" id="items">
+              <a class="menu-opciones" onclick="focusTabla1();">7.1 Formatos Generales</a>
+            </li>
+            <li id="items">
+              <a class="menu-opciones" onclick="focusTabla2();">7.2 Selección de personal</a>
+            </li>
+            <li id="items">
+              <a class="menu-opciones" onclick="focusTabla3();">7.3 Capacitaciones</a>
+            </li>
+            <li id="items">
+              <a class="menu-opciones" onclick="focusTabla4();">7.4 Evaluación del desempeño del personal</a>
+            </li>
+            <li id="items">
+                <a class="menu-opciones" onclick="focusTabla5();">7.5 Formatos internos no controlados</a>
+            </li>
+            <div class="menu-selector">
+              <div class="m-selector-r"></div>
+              <div class="m-selector-l"></div>
+            </div>
+          </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="contenedor-btnGestion">
+          <a href="../humana"><img src="../../../public/img/iconoGestionHumana-white.png" id="gestion-humana"></a>
+        </div>
+        <div class="tabla" id="tabla_1">
+            <div class="encabezado-tabla">
+                <div class="titulo-numero"><h2>N°</h2></div>
+                <div class="titulo-nombre"><h2>Título</h2></div>
+                <div class="titulo-documento"><h2>Documento</h2></div>
+            </div>
+            <div class="cuerpo-tabla">
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>1</p></div>
+                    <div class="dato-titulo"><p>GH-P01-F09-R5 Requisición de personal</p></div>
+                    <div class="dato-documento"><a href="/1. GH-P01-F09-R5 Requisición de personal.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+            </div>
+            
+        </div>
+            
+        <div class="tabla" id="tabla_2">
+            <div class="encabezado-tabla">
+                <div class="titulo-numero"><h2>N°</h2></div>
+                <div class="titulo-nombre"><h2>Título</h2></div>
+                <div class="titulo-documento"><h2>Documento</h2></div>
+            </div>
+            <div class="cuerpo-tabla">
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>1</p></div>
+                    <div class="dato-titulo"><p>GH-P01-F02-R6  Información General de Candidatos</p></div>
+                    <div class="dato-documento"><a href="/1 GH-P01-F02-R6  Información General de Candidatos.docx"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>2</p></div>
+                    <div class="dato-titulo"><p>GH-P01-F17-R3  Aprobacion hoja de vida</p></div>
+                    <div class="dato-documento"><a href="/2 GH-P01-F17-R3  Aprobacion hoja de vida.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>3</p></div>
+                    <div class="dato-titulo"><p>GH-P01-F27-R1 Informe de selección</p></div>
+                    <div class="dato-documento"><a href="/3 GH-P01-F27-R1 Informe de selección.docx"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabla" id="tabla_3">
+            <div class="encabezado-tabla">
+                <div class="titulo-numero"><h2>N°</h2></div>
+                <div class="titulo-nombre"><h2>Título</h2></div>
+                <div class="titulo-documento"><h2>Documento</h2></div>
+            </div>
+            <div class="cuerpo-tabla">
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>1</p></div>
+                    <div class="dato-titulo"><p>GH-P02-F06-R0 Diagnóstico de necesidades capacitación</p></div>
+                    <div class="dato-documento"><a href="/1 GH-P02-F06-R0 Diagnóstico de necesidades capacitación.xls"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>2</p></div>
+                    <div class="dato-titulo"><p>GH-P02-F04-R1 Evaluación de Capacitación</p></div>
+                    <div class="dato-documento"><a href="/2 GH-P02-F04-R1 Evaluación de Capacitación.docx"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>3</p></div>
+                    <div class="dato-titulo"><p>GH-P02-F01-R8 Listado de Asistentes a capacitación_Eventos</p></div>
+                    <div class="dato-documento"><a href="/3 GH-P02-F01-R8 Listado de Asistentes a capacitación_Eventos.docx"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>4</p></div>
+                    <div class="dato-titulo"><p>GH-P02-F02-R3 Cronograma Entrenamiento y Capacitaciòn</p></div>
+                    <div class="dato-documento"><a href="/4 GH-P02-F02-R3 Cronograma Entrenamiento y Capacitaciòn.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="tabla" id="tabla_4">
+            <div class="encabezado-tabla">
+                <div class="titulo-numero"><h2>N°</h2></div>
+                <div class="titulo-nombre"><h2>Título</h2></div>
+                <div class="titulo-documento"><h2>Documento</h2></div>
+            </div>
+            <div class="cuerpo-tabla">
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>1</p></div>
+                    <div class="dato-titulo"><p>GH-P03-F01-R4 Eva. Desempeño Operaciones y Admon</p></div>
+                    <div class="dato-documento"><a href="/1 GH-P03-F01-R4 Eva. Desempeño Operaciones y Admon.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabla" id="tabla_5">
+            <div class="encabezado-tabla">
+                <div class="titulo-numero"><h2>N°</h2></div>
+                <div class="titulo-nombre"><h2>Título</h2></div>
+                <div class="titulo-documento"><h2>Documento</h2></div>
+            </div>
+            <div class="cuerpo-tabla">
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>1</p></div>
+                    <div class="dato-titulo"><p>Relación de Transportes y Caja Menor</p></div>
+                    <div class="dato-documento"><a href="/1 Relación de Transportes y Caja Menor.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>2</p></div>
+                    <div class="dato-titulo"><p>Acta Entrega Carnet y Dotación</p></div>
+                    <div class="dato-documento"><a href="/2  Acta Entrega Carnet y Dotación (1).docx"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>3</p></div>
+                    <div class="dato-titulo"><p>Autorizacion de descuento por nómina</p></div>
+                    <div class="dato-documento"><a href="/3  Autorizacion de descuento por nómina.docx"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>4</p></div>
+                    <div class="dato-titulo"><p>Encuesta de Retiro</p></div>
+                    <div class="dato-documento"><a href="/4  Encuesta de Retiro.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>5</p></div>
+                    <div class="dato-titulo"><p>Formato para procedimiento disciplinario</p></div>
+                    <div class="dato-documento"><a href="/5  Formato para procedimiento disciplinario.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>6</p></div>
+                    <div class="dato-titulo"><p>Formato Reporte Novedades Nómina</p></div>
+                    <div class="dato-documento"><a href="/6 Formato Reporte Novedades Nómina.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>7</p></div>
+                    <div class="dato-titulo"><p>Lista Documentos de Ingreso Versión Nov 2017</p></div>
+                    <div class="dato-documento"><a href="/7 Lista Documentos de Ingreso Versión Nov 2017.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>8</p></div>
+                    <div class="dato-titulo"><p>Paz y Salvo</p></div>
+                    <div class="dato-documento"><a href="/8  Paz y Salvo.docx"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>9</p></div>
+                    <div class="dato-titulo"><p>Solicitud de Permiso</p></div>
+                    <div class="dato-documento"><a href="/9 Solicitud de Permiso.doc"><img src="../../../public/img/microsoft_office_word_logo_icon_145724.ico" id="word"></a></div>
+                </div>
+                <div class="fila-datos">
+                    <div class="dato-numero"><p>10</p></div>
+                    <div class="dato-titulo"><p>Lista Documentos de Ingreso</p></div>
+                    <div class="dato-documento"><a href="/10 Lista Documentos de Ingreso.xlsx"><img src="../../../public/img/microsoft_office_excel_logo_icon_145720.ico" id="excel"></a></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../../../javascript/menu.js"></script>
+    <script src="../../../javascript/subtablas.js"></script>
+    <script src="../../../javascript/menuTablas.js"></script>
+</body>
+</html>

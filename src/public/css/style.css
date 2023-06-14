@@ -1,0 +1,134 @@
+
+*{
+
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+.img {
+    width: 100%;
+}
+
+body {
+    background-color: #faf5f5;
+    background-image: url(mainBackground.jpg);
+    justify-content: center;
+}
+.text-justify {
+    text-align: justify;
+}
+ #logo{
+    width: 45%;
+    margin-top: 1px !important;
+    justify-content: center !important;
+    
+}
+
+
+.btn-1 {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #d1164c !important;
+    border-radius: 7px !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    color: #f5f5f5 !important;
+    font: 10px;
+    text-align: center !important;
+    font-weight: bold;
+    padding: 10px 0px ;
+    width: 33% !important;
+    margin: 5px 0px 8px 0px;
+ 
+}
+.btn-1:hover{
+    background-color: #ec547f !important;
+    color: black !important;
+    
+
+}
+#portales{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    column-gap: calc(1em + 0.7vw);
+    row-gap: calc(1em + 0.7vw);
+    border-radius: 70%;
+}
+
+/*cuadros*/
+
+#cuadro-1, #cuadro-2, #cuadro-4 {
+    border: solid 1px #07070759;
+    box-shadow: 0px 0px 10px 0px #e60505;
+    width: 350px; 
+    border-radius: 10px;
+    margin-top: 30px;
+
+}
+/*
+img{
+    margin-top: -100px;
+}*/
+
+
+/*titulo*/
+
+
+ /*linea*/
+ .info hr {
+    margin-left:  10px; 
+    margin-right:  10px;
+}
+.info hr {
+    border: 0.5px solid #e60505;
+    width: 100%;  
+}
+/*barra final*/
+
+.enlace {
+    text-align: center;  
+     
+}
+.enlace li a {
+    
+    color: #413939;
+    text-decoration: none;  
+    font-size: 10px;
+    
+}
+.enlace li a:hover {
+    color:#d1164c;
+    
+    
+}
+
+/*------------ -----------------------Sobre escrituras para realizar cambios responsivos en la página según un tamaño específico---------------------------------*/ 
+@media (max-width: 912px){
+    .portales{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    #cuadro-1, #cuadro-2, #cuadro-3, #cuadro-4{
+        display: grid !important;
+        flex-direction: row !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 450px){
+    .portales{
+        display: flex !important;
+        flex-direction: row !important;
+        padding: 0px 30px !important;
+    }
+    #cuadro-1, #cuadro-2, #cuadro-3, #cuadro-4{
+        display: grid !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+}
+
+
+
+

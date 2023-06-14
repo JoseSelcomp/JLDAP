@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="/satelite.png">
+    <title>Selcomp Ingeniería S.A.S</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/aranda.css">
+</head>
+<body>
+    <!--------------------------------------------------------------------------- Contenedor padre ----------------------------------------------------------------------------->
+    <div class="container my-3 align-items-center">
+        <div class="row my-5 justify-content-center" id="encabezado">
+            <a href="/aplicaciones">
+                <div class="row"><img id="logo" src="/selcomp2.png" alt="Selcomp Ingenieria S.A.S" style="justify-content: left;"/></div>
+            </a>
+            <div class="row justify-content-center"><h1 id="titulo">MESA DE SERVICIO</h1></div>
+        </div>
+        <!---------------------- Contenedor de los dos portales de servicio -------------------------->
+        <div class="row justify-content-center text-center" id="portales" style="padding-left: 3%; padding-right: 3%;">
+            <!------------------------ tag de portal clientes ----------------------------------------------->
+            <div class="col-3" style="border-radius: 100px; padding: 15px 2px;" id="pCliente">
+                <div class="row">
+                    <img src="/usuario.svg">
+                </div>
+                <div class="row"  id="contenidoPortal">
+                    <div class="row justify-content-center"><h2 id="categoria">PORTAL  CLIENTE</h2></div>
+                    <div class="row"><P id="descripcion">Creación de solicitudes para la mesa de servicio</P></div>
+                    <div class="row justify-content-center" id="btnEnlace"><a class="enlace" href="http://aranda.selcomp.com.co/USDKV8" style="text-decoration: none; width: 26%;">Ingresar</a></div>
+                </div>
+            </div>
+            
+            <!-------------------------- tag de portal especialist -------------------------------------->
+            <div class="col-3" style="border-radius: 100px; padding: 15px 2px;" id="pEspecialistas">
+                <div class="row">
+                    <img src="/especialista.svg">
+                </div>
+                <div class="row" id="contenidoPortal">
+                    <div class="row justify-content-center"><h2 id="categoria">PORTAL ESPECIALISTAS</h2></div>
+                    <div class="row justify-content-center" style="text-align: center;"><p id="descripcion">Visualización y gestionamiento de tickets </p></div>
+                    <div class="row justify-content-center" class="btnEnlace"><a class="enlace" href="http://aranda.selcomp.com.co/ASDKV8">Ingresar</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/bootstrap.min.js"></script>
+</body>
+</html>
